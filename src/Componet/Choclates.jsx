@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 const Choclates = () => {
     return (
-        <div className='flex h-screen relative flex-col border-2 border-orange-700 max-w items-center    '> 
+        <div className='flex h-screen relative flex-col  max-w items-center    '> 
           
            <div className='flex justify-center mt-20  md:mx-8 md:border-[1px] md:border-black  gap-2 flex-wrap  md:max-w-full sm:w-auto '>
            {

@@ -39,7 +39,7 @@ const Home = () => {
     const [loaded, setLoaded] = useState(false);
 
    
-    
+
     // const usedisp = useDispatch()
 
     
@@ -380,7 +380,7 @@ const Home = () => {
            </div>
 
            <div className='p-2'>
-           <input type='email'  placeholder='Mobile Number' 
+           <input type='email'  placeholder='Email' 
           className='bg-gray-200 h-11 w-[28rem] focus:border-pink-600-200' 
            />
            </div>

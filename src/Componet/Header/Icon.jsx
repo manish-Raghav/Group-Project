@@ -38,11 +38,11 @@ const Icon = () => {
                  </div>
                  </Link>
 
-                 {/* <Link to='/Upload'> */}
+                 <Link to='/Upload'>
                  <div className='cursor-pointer p-2   focus:text-red-700'>
                  <FaUser className='text-xl text-red-400'    />   
                    </div>
-                 {/* </Link> */}
+                 </Link>
 </div>
 
       <div className=' absolute  w-44 sm:top-12 md:top-11  md:left-12 z-30 shadow-md bg-slate-50 capitalize'>

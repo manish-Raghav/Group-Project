@@ -2,11 +2,20 @@ import React, { useState } from 'react'
 import { Data } from '../Data/Data';
 import Card from 'react-bootstrap/Card';
 import Footer from './Footer';
+import { prepend } from 'dom/lib/mutation';
 
 const Sweet = () => {
 
   const [page,setpg] = useState(1);
   var dty= Data.length
+
+
+  
+
+  const datashow =(pg) =>{
+    if(pg >=1 && pg <dty && pg!==page)
+    setpg(pg);
+  }
     return (
         <div className='flex  h-screen relative flex-col  max-w items-center    '> 
           
@@ -55,19 +64,17 @@ const Sweet = () => {
 
          {
            
-          Data.length>0 && <div>
+          Data.length>0 && <div className='flex gap-2 mt-2 text-lg'>
 
-          <span>◀</span>
+          <span className='cursor-pointer' onClick={()=>datashow(page-1)}>◀</span>
           
-          {[...Array(Math.ceil(dty.length / 10))].map((_, i) => {
-        return <span key={i}>{i + 1}</span>;
+          {[...Array(Math.ceil(dty / 10))].map((_, i) => {
+        return <span key={i}>{i + 1}</span>; 
       })}
          
              
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>▶</span>
+            
+              <span className='cursor-pointer' onClick={()=>datashow(page+1)}>▶</span>
           </div>
 
          }

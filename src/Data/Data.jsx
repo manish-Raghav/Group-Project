@@ -88,53 +88,53 @@ export const Data =[
 
     {
         Product_name :'sweet',
-        name:'Ghevar',
+        name:'Kaju_Katri',
         quantity:'100gm', 
         price :'100',
         discount:4,
-        img :'https://cdn0.weddingwire.in/article/3745/original/1280/jpg/65473-indian-sweets-kamboj-sweets-caterers-ghevar.jpeg',
+        img :'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-chw1wJwOZYw9fWSPRzIw3MQpujTxbAHlOhNZQggKg3oLMZUMUZqRPrsOBO76okAsBD8',
         description:'t popular desserts! It consists of dumplings traditionally made of thickened or reduced milk'
 
     },
 
     {
         Product_name :'sweet',
-        name:'Ghevar',
+        name:'Barfi',
         quantity:'100gm', 
         price :'100',
         discount:4,
-        img :'https://cdn0.weddingwire.in/article/3745/original/1280/jpg/65473-indian-sweets-kamboj-sweets-caterers-ghevar.jpeg',
+        img :'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1mdmLmL94AcU16dgCZH2Mwm5YHutoDruGZ2YIi8WR31eI1QTokdjU6sW7ZoBq_viUb8U',
         description:'t popular desserts! It consists of dumplings traditionally made of thickened or reduced milk'
 
     },
     {
         Product_name :'sweet',
-        name:'Ghevar',
-        quantity:'100gm', 
-        price :'100',
+        name:'Barfi',
+        quantity:'500gm', 
+        price :'400',
         discount:4,
-        img :'https://cdn0.weddingwire.in/article/3745/original/1280/jpg/65473-indian-sweets-kamboj-sweets-caterers-ghevar.jpeg',
+        img :'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIoV0CyMNrZt8cU7QbUGe8fFZo7ocReYzjy-mk5ebjNvFMw1VxkxLLYlhPNdWpOnepSaw',
         description:'t popular desserts! It consists of dumplings traditionally made of thickened or reduced milk'
 
     },
     {
         Product_name :'sweet',
-        name:'Ghevar',
-        quantity:'100gm', 
-        price :'100',
+        name:'Cack_Barfi',
+        quantity:'500gm', 
+        price :'300',
         discount:4,
-        img :'https://cdn0.weddingwire.in/article/3745/original/1280/jpg/65473-indian-sweets-kamboj-sweets-caterers-ghevar.jpeg',
+        img :'https://aabsweets.com/wp-content/themes/a2b/images/sweets-confections.png',
         description:'t popular desserts! It consists of dumplings traditionally made of thickened or reduced milk'
 
     },
 
     {
         Product_name :'sweet',
-        name:'Ghevar',
-        quantity:'100gm', 
-        price :'100',
+        name:'son-barfi',
+        quantity:'500gm', 
+        price :'250',
         discount:4,
-        img :'https://cdn0.weddingwire.in/article/3745/original/1280/jpg/65473-indian-sweets-kamboj-sweets-caterers-ghevar.jpeg',
+        img :'https://static.toiimg.com/thumb/msid-45452360,imgsize-29310,width-400,resizemode-4/45452360.jpg',
         description:'t popular desserts! It consists of dumplings traditionally made of thickened or reduced milk'
 
     },

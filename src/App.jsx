@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './Componet/Home'
 import Back from './Componet/Back'
 import Header from './Componet/Header/Header'
+import Login from './Componet/Login'
 
 
 
@@ -28,7 +29,8 @@ function App() {
     <Route path='/food' element ={<Food />} />
     <Route path='/chocolate' element ={<Choclates />} />
     <Route path='/back' element ={<Back />} />
-
+    <Route path='/upload' element ={<Login />} />
+   
 
     </Routes>
     </div>

@@ -30,7 +30,16 @@ import { data } from 'autoprefixer';
 
    // const mn =  useSelector((stat) => stat.productcart.productList)
     
-  
+   // const [dta ,setdta] = useState(mn)
+   // // console.log(dt);
+
+   // const setclick = ()=>{
+   //    setisset(true)
+   // }
+
+   // const stopdt = ()=>{
+   //    setisset(false)
+   // }
   
 
    //  const fn =(e) =>{
@@ -56,7 +65,7 @@ import { data } from 'autoprefixer';
 
 
                   <div className='flex absolute left-20 md:left-32 sm:top-2 md:w-56 sm:w-36  sm:z-0 md:z-20 w-auto rounded-2xl  shadow-xl'>
-                     <input    type='text' placeholder='Search here.. '   className='md:w-56 sm:w-40  h-9 border-[1px] focus:border-none
+                     <input    type='text' placeholder='Search here.. '   className='md:w-56 sm:w-40  h-9 border-[1px] ml-3 focus:border-none
                       border-red-600 rounded-xl px-2 box-border-none   text-black' />
                      <div className='absolute md:left-48  sm:left-32 justify-center  '>
                      <CiSearch  size={30}  className=' cursor-pointer text-red-700   ' /> 
@@ -66,7 +75,7 @@ import { data } from 'autoprefixer';
                   </div>
 
                   
-                  <nav className=' md:flex  sm:hidden gap-4 uppercase relative left-64 '>
+                  <nav className=' md:flex mt-1 sm:hidden gap-4 uppercase relative left-64 '>
                      
                      <div>
                      <Nav />
