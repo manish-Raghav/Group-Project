@@ -8,6 +8,7 @@ import Home from './Componet/Home'
 import Back from './Componet/Back'
 import Header from './Componet/Header/Header'
 import Login from './Componet/Login'
+import Upload from './Componet/Upload'
 
 
 
@@ -29,7 +30,8 @@ function App() {
     <Route path='/food' element ={<Food />} />
     <Route path='/chocolate' element ={<Choclates />} />
     <Route path='/back' element ={<Back />} />
-    <Route path='/upload' element ={<Login />} />
+    <Route path='/login' element ={<Login />} />
+    <Route path='/upload' element ={<Upload />} />
    
 
     </Routes>

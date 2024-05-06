@@ -38,7 +38,7 @@ const Icon = () => {
                  </div>
                  </Link>
 
-                 <Link to='/Upload'>
+                 <Link to='/login'>
                  <div className='cursor-pointer p-2   focus:text-red-700'>
                  <FaUser className='text-xl text-red-400'    />   
                    </div>

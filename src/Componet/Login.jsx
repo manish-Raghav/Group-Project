@@ -9,7 +9,7 @@ const Login = () => {
     const log =()=>{
 
 
-        if(eml === 'abcd@gmail.com' && pas === '12345')
+        if(eml === 'manishraghav@gmail.com' && pas === '12345')
               navi('/Upload');
 
         else
@@ -27,7 +27,7 @@ const Login = () => {
      <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-red-700 underline">
-                   Sign in
+                   Log in
                 </h1>
                 <form className="mt-6">
                     <div className="mb-2">

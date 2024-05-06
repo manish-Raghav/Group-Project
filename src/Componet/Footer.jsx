@@ -1,5 +1,8 @@
 import React from 'react'
-
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="relative bg-white border-t-zinc-300 border-2  pt-8 pb-6">
@@ -31,31 +34,12 @@ const Footer = () => {
             <h5 className="text-lg mt-0 mb-2 text-gray-700">
              Om_Sweet Shop Khair Road Tentigaon, Mant (Mathura)
             </h5>
-            <div className="mt-6">
-              <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-twitter"></i>
-              </button>
-              <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-facebook-square"></i>
-              </button>
-              <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-github"></i>
-              </button>
+            <div className="mt-6 flex gap-4">
+              <FaXTwitter className='size-8 text-fuchsia-700'/>
+              
+                <FaInstagram  className='size-8 text-fuchsia-700'/>
+                <IoIosMail  className='size-8 text-fuchsia-700'/>
+                <FaWhatsapp  className='size-8 text-fuchsia-700'/>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">

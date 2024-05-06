@@ -23,6 +23,8 @@ import { IoCallOutline } from "react-icons/io5";
 import { FaCalendarDays } from "react-icons/fa6";
 import { NewPro } from '../Data/NewPro';
 import Best from '../Data/Best';
+import { propTypes } from 'react-bootstrap/esm/Image';
+import { PiNyTimesLogo } from 'react-icons/pi';
 
 // import classNames from 'classnames';
 
@@ -34,6 +36,13 @@ import Best from '../Data/Best';
 const Home = () => {
     const [arr ,setarr] = useState([]);
     const [sw ,setsw] = useState([]);
+
+
+    const[nm,setnm] =useState();
+    const[pn,setpn] =useState();
+    const[eml,seteml] =useState();
+    const[ms,setms] =useState();
+
 
 
     const [loaded, setLoaded] = useState(false);
@@ -86,8 +95,18 @@ const Home = () => {
     }
     
 
+    const pnt=()=>{
+        console.log(nm);
+        console.log(pn);
+        console.log(eml);
+        console.log(ms);
+    }
+
   return (
-    <div className='flex flex-col relative  max-h-full '> 
+  
+       
+     
+     <div className='flex flex-col relative   max-h-full '> 
      
      <div className='mt-[4.1rem] w-full'>
       <MainCarousel />
@@ -98,13 +117,13 @@ const Home = () => {
 
     <div className='flex  flex-col justify-center mt-11  '>
 
-    <div className='flex flex-row justify-center' >
-    <hr className='mt-4 md:w-96 h-1 bg-red-900' />
+    <div className='flex flex-row  justify-center' >
+    <hr className='mt-6 mr-3 md:w-96 h-1 bg-red-900' />
        <div className=' flex  '> 
        <h1 className='text-3xl  font-bold text-red-900 pr-2 ' >All </h1>
        <h1 className='text-3xl font-thin text-red-900 ' > Products </h1>
      </div>
-     <hr className='mt-4 md:w-96 h-1 bg-red-900' />
+     <hr className='mt-6 ml-3 md:w-96 h-1 bg-red-900' />
      </div>
 
 
@@ -112,7 +131,7 @@ const Home = () => {
        <Homesectioncaro />
      </div> */}
     
-     <div className='  sm:w-auto md:w-[78rem] h-[19rem] md:relative left-16 flex flex-row mt-3   overflow-scroll overflow-y-hidden scrollbar-none scroll-smooth transition-all border-[1px] border-black ' 
+     <div className=' ml-3 gap-2 sm:w-9 md:w-[78rem] h-[19rem] md:relative left-16 flex flex-row mt-3  hover:cursor-pointer   ' 
             ref={slideproduct}>
     
 
@@ -132,7 +151,8 @@ const Home = () => {
       AllProduct.map((el, index) => {
                 return (
                   <Mycard
-                    name={el.name}
+                 
+                 name={el.name}
                     catego={el.Product_name}
                     price={el.price}
                     image={el.img}
@@ -145,75 +165,26 @@ const Home = () => {
      }
     
      </div>
+  
 
+          
 
-
-
-
-       
-     
-     <div className=' pt-5 flex flex-row justify-center' >
-    <hr className='mt-4 md:w-96 h-1 bg-red-900' />
-       <div className=' flex   '> 
-       <h1 className='text-3xl  font-bold text-red-900 pr-2 ' >New  </h1>
-       <h1 className='text-3xl font-thin text-red-900 ' > Products </h1>
-     </div>
-     <hr className='mt-4 md:w-96 h-1 bg-red-900' />
-     </div>
-       
-     
-    
-
-     <div className='  sm:w-auto md:w-[78rem] h-[19rem] md:relative left-16 flex flex-row mt-3   overflow-scroll overflow-y-hidden scrollbar-none scroll-smooth transition-all border-[1px] border-black ' 
-            ref={slideproduct}>
-    
-
-
-
-     <div className='  w-full sm:invisible md:visible mt-28 absolute  z-20 flex justify-between'>
-     <div className='absolute  z-40 top-[1.2rem]  '>
-     <button className='text-3xl font-bold bg-red-600 hover:bg-amber-400 rounded-md' onClick={privious} ><GrPrevious/></button>
-     </div>
-
-     <div className= ' absolute right-[0rem] top-[1.2rem] z-30'>
-     <button className='text-3xl font-bold  bg-red-600 hover:bg-amber-400 rounded-md ' onClick={nextd}  ><GrNext /></button>
-     </div>
-     </div>
-     {
-      NewPro.map((el, index) => {
-                return (
-                  <Mycard
-                    name={el.name}
-                    catego={el.Product_name}
-                    price={el.price}
-                    image={el.img}
-                    quant ={el.quantity}
-                    discount = {el.discount}
-                    desc ={el.description}
-                  />
-                );
-              })
-     }
-     </div>
-
-
-
-     <div className='pt-5 flex flex-row justify-center' >
-    <hr className='mt-4 md:w-96 h-1 bg-red-900' />
+     <div className='flex flex-row mt-16  justify-center' >
+    <hr className='mt-6 mr-3 md:w-96 h-1 bg-red-900' />
        <div className=' flex  '> 
-       <h1 className='text-3xl  font-bold text-red-900 pr-2 ' >Bestseller </h1>
+       <h1 className='text-3xl  font-bold text-red-900 pr-2 ' >BestSheller </h1>
        <h1 className='text-3xl font-thin text-red-900 ' > Products </h1>
      </div>
-     <hr className='mt-4 md:w-96 h-1 bg-red-900' />
+     <hr className='mt-6 ml-3 md:w-96 h-1 bg-red-900' />
      </div>
        
 
       
 
-      
-     
+{/*       
+     overflow-x-scroll overflow-y-scroll  sm:scroll-smooth */}
 
-     <div className='  sm:w-auto md:w-[78rem] h-[19rem] md:relative left-16 flex flex-row mt-3   overflow-scroll overflow-y-hidden scrollbar-none scroll-smooth transition-all border-[1px] border-black ' >
+     <div className=' ml-3 gap-2 sm:w-9 md:w-[78rem] h-[19rem] md:relative left-16 flex flex-row mt-3   hover:cursor-pointer  ' >
        
             
     
@@ -230,12 +201,12 @@ const Home = () => {
      </div>
      </div>
      {
-      Best.map((el, index) => {
+      NewPro.map((el, index) => {
      
                 return (
                  
                   <Mycard
-                    name={el.name}
+                     name={el.name}
                     catego={el.Product_name}
                     price={el.price}
                     image={el.img}
@@ -250,28 +221,90 @@ const Home = () => {
 
     </div>
 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div className='flex flex-row mt-16  justify-center' >
+    <hr className='mt-6 mr-3 md:w-96 h-1 bg-red-900' />
+       <div className=' flex  '> 
+       <h1 className='text-3xl  font-bold text-red-900 pr-2 ' >New </h1>
+       <h1 className='text-3xl font-thin text-red-900 ' > Products </h1>
+     </div>
+     <hr className='mt-6 ml-3 md:w-96 h-1 bg-red-900' />
+     </div>
+
+       
+     
+    
+
+     <div className='ml-3 gap-2 sm:w-9 md:w-[78rem] h-[19rem] md:relative left-16 flex flex-row mt-3  hover:cursor-pointer ' 
+            ref={slideproduct}>
+    
+
+
+
+     <div className='  w-full sm:invisible md:visible mt-28 absolute  z-20 flex justify-between'>
+     <div className='absolute  z-40 top-[1.2rem]  '>
+     <button className='text-3xl font-bold bg-red-600 hover:bg-amber-400 rounded-md' onClick={privious} ><GrPrevious/></button>
+     </div>
+
+     <div className= ' absolute right-[0rem] top-[1.2rem] z-30'>
+     <button className='text-3xl font-bold  bg-red-600 hover:bg-amber-400 rounded-md ' onClick={nextd}  ><GrNext /></button>
+     </div>
+     </div>
+     {
+      Best.map((el, index) => {
+                return (
+                  <Mycard
+                     name={el.name}
+                    catego={el.Product_name}
+                    price={el.price}
+                    image={el.img}
+                    quant ={el.quantity}
+                    discount = {el.discount}
+                    desc ={el.description}
+                  />
+                );
+              })
+     }
+     </div>
+
+
+
+     
+
     {/* <div  className='relative w-full bottom-0 top-20 '>
        <Footer/>
        </div> */}
 
 
-       <div className='flex h-[70vh] bg-[#f8ecd8] relative top-28 '>
+       <div className='sm:flex sm:flex-col md:flex md:flex-row md:h-[70vh] sm:h-[80vh] bg-[#f8ecd8] relative top-28 '>
        {/* <div>
         <img src={ad} alt='ad' className='w-96'/>
        </div> */}
-      g
-       <div className='ml-36 mt-4    '>
-        <img src={ad2} alt='ad2'  className='w-auto h-96 rounded-full  shadow-l' />   
+      
+       <div className=' sm:w-32 sm:h-36 md:w-auto md:h-96  md:ml-36 md:mt-4     '>
+        <img src={ad2} alt='ad2'  className=' sm:w-32 sm:h-36  md:w-auto md:h-96  rounded-full  shadow-l' />   
        </div>
 
-
-       <div className=' absolute right-72 top-20 '>
+       {/*   */}
+       <div className='sm:translate-y-10  md:translate-y-0  sm:absolute  md:absolute  md:right-72 md:top-20  '>
             <div className='     text-3xl absolute bottom-[16rem] left-9  font-bold  text-red-900'>
             <h1>About Us</h1>
 
             </div> 
 
-            <div className='w-96  pt-7'>
+            <div className=' sm:w-screen   md:w-96  pt-7'>
               <p className='text font-serif'>
               After serving so many customers, today we can proudly
                say that our shop, dummy company, situated at area, city, state, is home to a wide range of sweets that cater to the diverse taste buds of every patron. All of our delicacies are made using unique recipes that will leave a memorable aftertaste in your mouth. You can call for sweets in times of sudden sweet cravings or when you wish to complete a meal with a delightful dessert.
@@ -297,18 +330,18 @@ const Home = () => {
            <h1>Contact us</h1>
            </div>  
 
-           <div  className='flex gap-4'>
+           <div  className='md:flex gap-4'>
                 <div className=' ml-9'>
                   <img src={mp} alt='mp' />
                  </div>
 
-                 <div  className=' mt-5 ml-3 flex flex-col gap-4'>
+                 <div  className=' sm:ml-10 sm:mt-6 md:mt-5 md:ml-3 flex flex-col gap-4'>
                     <div>
                     <div className='flex gap-4'> 
                            <FaMapLocationDot className='text-2xl text-fuchsia-700 '  />
                            <h1 className='text-xl text-black'>our_shop</h1>
                           </div>
-                        <div > 
+                        <div  className=' '> 
                            
                              <h4>6LSC, RSN Arcade, 6LSC, RSN Arcade, IP Extension,
                               Patparganj, near PRINCE APARTMENT, I.P.Extension, Patparganj, Delhi, 110092</h4>
@@ -367,21 +400,27 @@ const Home = () => {
           
        </div>
 
-     <div  className=' ml-60 mt-9' >
-      <div className='flex gap-2'>
-       <div className='gap-3 flex flex-col'>
+     <div  className=' md:ml-60   md:mr-24 mt-9  ' >
+      <div className=' md:flex  gap-2     '>
+       <div className='gap-3  flex flex-col'>
           <div className='p-2'>
-             <input type='text'  placeholder='Full Name' className='bg-gray-200 h-11 w-[28rem] focus:border-pink-600-200' />
+             <input type='text'  placeholder='Full Name' className='appearance-none border border-gray-300 rounded-md h-11 md:w-[28rem] py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-blue-600'
+               onChange={(e => setnm(e.target.value))}
+             />
            </div>
 
            <div className='p-2'>
            <input type='text'  placeholder='Mobile Number'
-          className='bg-gray-200 h-11 w-[28rem] focus:border-pink-600-200' />
+          className='appearance-none border border-gray-300 rounded-md h-11 md:w-[28rem] py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-blue-600'
+          onChange={(e => setpn(e.target.value))} />
            </div>
 
            <div className='p-2'>
            <input type='email'  placeholder='Email' 
-          className='bg-gray-200 h-11 w-[28rem] focus:border-pink-600-200' 
+          className='appearance-none border border-gray-300 rounded-md h-11 md:w-[28rem] py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-blue-600' 
+          style={{ textAlign: 'start' }}
+           
+          onChange={(e => seteml(e.target.value))}
            />
            </div>
 
@@ -389,13 +428,15 @@ const Home = () => {
 
         <div className='w-96 h-44 p-2'>
           <input type='text'  placeholder='Messege'
-             className='bg-gray-200 h-[12rem] w-[28rem] focus:border-pink-600-200' 
+             className='appearance-none border border-gray-300 rounded-md h-[12rem] md:w-[28rem] py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-blue-600' 
+             onChange={(e => setms(e.target.value))}
+
           />
         </div>
        </div>
       {/* bg-yellow-400 w-[8rem] text-lg font-normal text-slate-800  h-[2rem] rounded-2xl active:bg-yellow-600 */}
-        <div className='ml-[25rem] mt-6 p-[2px] bg-red-900 w-32' >
-        <button className='text-xl text-white ml-6'> Submit </button>  
+        <div className='md:ml-[25rem] mt-6 p-[2px] bg-red-900 w-32 rounded-md hover:scale-95' >
+        <button className='md:text-xl text-white ml-6 ' onClick={pnt()}> Submit </button>  
         </div>
 
        </div>

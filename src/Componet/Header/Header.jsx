@@ -64,7 +64,7 @@ import { data } from 'autoprefixer';
 
 
 
-                  <div className='flex absolute left-20 md:left-32 sm:top-2 md:w-56 sm:w-36  sm:z-0 md:z-20 w-auto rounded-2xl  shadow-xl'>
+                  <div className='flex absolute left-20 md:left-32 sm:top-2 md:w-56 sm:w-36  sm:z-0 md:z-20 w-auto rounded-2xl '>
                      <input    type='text' placeholder='Search here.. '   className='md:w-56 sm:w-40  h-9 border-[1px] ml-3 focus:border-none
                       border-red-600 rounded-xl px-2 box-border-none   text-black' />
                      <div className='absolute md:left-48  sm:left-32 justify-center  '>
